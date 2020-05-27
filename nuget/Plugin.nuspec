@@ -62,16 +62,5 @@
      
      <!--Xamarin.iOS-->
      <file src="src\Geolocator.Plugin.iOSUnified\bin\iPhone\Release\Plugin.Geolocator.*" target="lib\Xamarin.iOS10" />
-       
-     
-     <!--Xamarin.Mac-->
-       <file src="src\Geolocator.Plugin.macOS\bin\Release\Plugin.Geolocator.*" target="lib\Xamarin.Mac20" />
-       
-
-       <!--UWP-->
-       <file src="src\Geolocator.Plugin.UWP\bin\Release\Plugin.Geolocator.*" target="lib\UAP10" />
-
-        <!--tvOS-->
-       <file src="src\Geolocator.Plugin.tvOS\bin\Release\Plugin.Geolocator.*" target="lib\XamarinTVOS" />
    </files>
 </package>

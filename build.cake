@@ -1,7 +1,7 @@
 #addin nuget:?package=Cake.Android.SdkManager
 
 var TARGET = Argument ("target", Argument ("t", "Default"));
-var VERSION = EnvironmentVariable ("APPVEYOR_BUILD_VERSION") ?? Argument("version", "0.0.9999");
+var VERSION = EnvironmentVariable ("APPVEYOR_BUILD_VERSION") ?? Argument("version", "4.2.0-rg");
 var CONFIG = Argument("configuration", EnvironmentVariable ("CONFIGURATION") ?? "Release");
 var SLN = "./src/Geolocator.sln";
 
@@ -17,7 +17,7 @@ Task("Libraries").Does(()=>
 });
 
 Task ("NuGet")
-	.IsDependentOn ("AndroidSDK")
+	//.IsDependentOn ("AndroidSDK")
 	.IsDependentOn ("Libraries")
 	.Does (() =>
 {
